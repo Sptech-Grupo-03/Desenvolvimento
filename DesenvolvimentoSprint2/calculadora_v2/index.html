@@ -4,12 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulação</title>
+    <title>Simuladora HF System</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-        rel="stylesheet">
+    
 </head>
 
 <body>
@@ -19,17 +16,17 @@
                 <h1>ESTRESSE HÍDRICO</h1>
             </header>
             <div class="div_index">
-                <h2>
+                <p>
                     A presença de reservatórios de água mal monitorados podem desencandear estresse
                     hídrico nas suas plantações e afetar toda sua cadeia de produção.
-                </h2>
+                </p>
             </div>
-            <button class="btn_descobrir_ajuda bgblue "><strong>DESCOBRIR COMO O "NOME DO PROJETO" PODE TE AJUDAR!</strong></button>
+            <button class="btn_descobrir_ajuda bgblue ">DESCOBRIR COMO O <span>HF SYSTEM</span> PODE TE AJUDAR!</button>
         </section>
 
         <section class="section_informacoes">
             <div class="div_informacoes">
-                <h2>ANTES, PRECISAREMOS QUE VOCÊ RESPONDA ALGUMAS PERGUNTAS, TUDO BEM?
+                <h2>ANTES, PRECISAREMOS QUE VOCÊ RESPONDA ALGUMAS PERGUNTAS, TUDO BEM ?
                 </h2>
             </div>
             <button class="btns">TUDO BEM</button>
@@ -46,7 +43,7 @@
             <button class="btns">CONTINUAR</button>
         </section>
 
-        <section class="part8">
+        <section class="section_perguntas">
             <div class="conteudoHome">
                 <h2>
                     QUANTOS CICLOS DE PRODUÇÃO ANUAL VOCÊ TEM ?
@@ -59,33 +56,33 @@
 
         <section class="section_perguntas">
             <div class="div_perguntas">
-                <h2>VOCÊ JÁ TRABALHA COM SISTEMA DE IRRIGAÇÃO?</h2>
+                <h2>VOCÊ JÁ TRABALHA COM SISTEMA DE IRRIGAÇÃO ?</h2>
             </div>
 
-            <label for="input_trabalha_com_sistemas">Sim</label>
-            <input type="radio" value = "true" id="input_trabalha_com_sistemas" >
-            <label for="input_trabalha_com_sistemas">Não</label>
-            <input type="radio" value = "false" id="input_trabalha_com_sistemas" >
+            <label for="input_trabalha_com_sistemas">SIM</label>
+            <input type="radio" value = "true" name="input_trabalha_com_sistemas" id="input_trabalha_com_sistemas_true">
+            <label for="input_trabalha_com_sistemas">NÃO</label>
+            <input type="radio" value = "false" name="input_trabalha_com_sistemas" id="input_trabalha_com_sistemas_false">
 
         </section>
 
         <section class="section_perguntas">
             <div class="conteudoHome">
                 <h2>
-                    VOCÊ POSSUI UM RESERVATÓRIO NO LOCAL DA SUA PLANTAÇÃO?
+                    VOCÊ POSSUI UM RESERVATÓRIO NO LOCAL DA SUA PLANTAÇÃO ?
                 </h2>
             </div>
 
-            <label for="input_possui_reservatorio">Sim</label>
-            <input type="radio" value = "true" id="input_possui_reservatorio" >
-            <label for="input_possui_reservatorio">Não</label>
-            <input type="radio" value = "false" id="input_possui_reservatorio" >
+            <label for="input_possui_reservatorio">SIM</label>
+            <input type="radio" value = "true" name="input_possui_reservatorio" id="input_possui_reservatorio_true">
+            <label for="input_possui_reservatorio">NÃO</label>
+            <input type="radio" value = "false" name="input_possui_reservatorio" id="input_possui_reservatorio_false">
 
         </section>
 
         <section class="section_perguntas"></section>
             <div class="conteudoHome">
-                <h2>QUAL A CAPACIDADE DO SEU RESERVATÓRIO?</h2>
+                <h2>QUAL A CAPACIDADE DO SEU RESERVATÓRIO ?</h2>
             </div>
             <input type="text" id="input_capacidade_reservatorio" placeholder="DIGITE AQUI A CAPACIDADE EM LITROS |">
             <button class="btns">CONTINUAR</button>
@@ -110,9 +107,11 @@
                 </h2>
             </div>
 
-            
-            <button id="btn_possui_sistema_irrigacao_true" value="true" class="btns">SIM</button>
-            <button id="btn_possui_sistema_irrigacao_false" value="false" class="btns">NÃO</button>
+            <label for="input_possui_sistema_monitoramento_reservatorio">SIM</label>
+            <input type="radio" value = "true" name="input_possui_sistema_monitoramento_reservatorio" id="input_possui_sistema_monitoramento_reservatorio_true">
+            <label for="input_possui_sistema_monitoramento_reservatorio">NÃO</label>
+            <input type="radio" value = "false" name="input_possui_sistema_monitoramento_reservatorio" id="input_possui_sistema_monitoramento_reservatorio_false">
+    
         </section>
 
         
@@ -124,23 +123,23 @@
             </div>
 
             <label for="input_tipo_sistema">MANUAL</label>
-            <input type="radio" value = "manual" id="input_tipo_sistema" >
+            <input type="radio" value = "manual" name="input_tipo_sistema" id="input_tipo_sistema_manual">
             <label for="input_tipo_sistema">AUTOMÁTICO</label>
-            <input type="radio" value = "automatico" id="input_tipo_sistema" >
+            <input type="radio" value = "automatico" name="input_tipo_sistema" id="input_tipo_sistema_automatico">
 
         </section>
 
         <section class="section_mensagem_validacao">
             <div class="conteudoHome">
                 <h1>TUDO PRONTO!</h1>
-                <h3>VAMOS DESCOBRIR COMO O <b>"NOME DO PROJETO"</b> PODE TE AJUDAR ?</h3>
+                <h3>VAMOS DESCOBRIR COMO O <b>HF SYSTEM</b> PODE TE AJUDAR ?</h3>
             </div>
             <button class="btns">DESCOBRIR</button>
         </section>
 
         <section class="section_resultado">
             <header>
-                <h1><b>"NOME DO PROJETO"</b></h1>
+                <h1><b>HF SYSTEM</b></h1>
             </header>
             <div class="conteudoHome">
                 <p id="p_resultado">
